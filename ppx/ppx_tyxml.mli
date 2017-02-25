@@ -33,3 +33,10 @@ val markup_to_expr :
     contained therein. *)
 
 val mapper : string list -> Ast_mapper.mapper
+
+
+(** Utils *)
+
+module Loc : sig
+  val string_start : string option -> Location.t -> Lexing.position
+end
