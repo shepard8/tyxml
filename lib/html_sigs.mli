@@ -883,10 +883,10 @@ module type T = sig
       | `Alt
       | `Href
       | `Coords
+      | `Download
       | `Shape
       | `Target
       | `Rel
-      | `Media
       | `Hreflang
       | `Mime_type
     ], [> | `Area]) nullary
@@ -896,11 +896,6 @@ module type T = sig
     | common
     | `Coords
     | `Shape
-    | `Target
-    | `Rel
-    | `Media
-    | `Hreflang
-    | `Mime_type
   ], [> | `Area]) nullary
 
   val map : ([< | map_attrib], 'a, [> | `Map of 'a]) star
