@@ -642,6 +642,8 @@ struct
 
   let area ~alt ?(a = []) () = Xml.leaf ~a: ((a_alt alt) :: a) "area"
 
+  let area_nohref ?(a = []) () = Xml.leaf ~a "area"
+
   let map = star "map"
 
   let del = star "del"

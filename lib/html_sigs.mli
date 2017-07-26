@@ -889,6 +889,18 @@ module type T = sig
       | `Mime_type
     ], [> | `Area]) nullary
 
+  val area_nohref :
+    ([<
+    | common
+    | `Coords
+    | `Shape
+    | `Target
+    | `Rel
+    | `Media
+    | `Hreflang
+    | `Mime_type
+  ], [> | `Area]) nullary
+
   val map : ([< | map_attrib], 'a, [> | `Map of 'a]) star
 
   (** {3 Tables Data} *)
