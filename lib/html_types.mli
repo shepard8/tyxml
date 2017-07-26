@@ -1740,7 +1740,7 @@ type img = [ `Img ]
 type img_interactive = [ `Img | `Img_interactive ]
 type img_content = notag
 type img_content_fun = notag
-type img_attrib = [ | common | `Height | `Ismap | `Width | `Srcset | `Img_sizes]
+type img_attrib = [ | common | `Height | `Ismap | `Width | `Srcset | `Img_sizes | `Usemap]
 
 (* Attributes used by audio and video. *)
 type media_attrib =
