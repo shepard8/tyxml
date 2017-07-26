@@ -640,7 +640,7 @@ struct
 
   let a_label = string_attrib "label"
 
-  let area ~alt ?(a = []) () = Xml.leaf ~a: ((a_alt alt) :: a) "area"
+  let area ~alt ~href ?(a = []) () = Xml.leaf ~a: ((a_alt alt) :: (a_href href) :: a) "area"
 
   let area_nohref ?(a = []) () = Xml.leaf ~a "area"
 

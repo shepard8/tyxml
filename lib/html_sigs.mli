@@ -877,9 +877,11 @@ module type T = sig
 
   val area :
     alt: text wrap ->
+    href: Xml.uri wrap ->
     ([<
       | common
       | `Alt
+      | `Href
       | `Coords
       | `Shape
       | `Target
